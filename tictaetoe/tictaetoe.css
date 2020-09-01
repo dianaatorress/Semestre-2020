@@ -1,0 +1,33 @@
+/* .title {
+  color: green;
+  font-style: oblique;
+  font-size: 40px;
+  text-decoration: underline;
+  text-shadow: 30px 20px 10px gray;
+  margin-left: 450px;
+}*/
+
+.button {
+  margin-right: 500px;
+  margin-left: 300px;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  /*grid-template-rows: 80px 80px 80px;*/
+}
+
+.elemento-grid {
+  margin-left: 500px;
+  height: 150px;
+  width: 150px;
+}
+
+.columna {
+  border-right: solid black 4px;
+}
+
+.fila {
+  border-bottom: solid black 4px;
+}
