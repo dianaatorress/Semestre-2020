@@ -4,22 +4,26 @@
     <meta charset="utf-8">
     <title>Tic tae toe</title>
     <link rel="stylesheet" href="./tictaetoe.css">
-    <script type="text/javascript" src="./tictaetoe.js"></script>
+    <script src="./tictaetoe.js"></script>
   </head>
   <body>
-    <marquee <!-- behavior="alternate" width="450"--> class="title">Tic Tae toe</marquee>
+    <marquee < behavior="alternate" width="450" class="title">Tic Tae toe</marquee>
     <button class="button">REINICIAR</button>
     <div class="contenedor-grid">
-      <div class="elemento-grid fila columna"></div>
-      <div class="elemento-grid fila columna"></div>
-      <div class="elemento-grid fila"></div>
-      <div class="elemento-grid fila columna"></div>
-      <div class="elemento-grid fila columna"></div>
-      <div class="elemento-grid fila"></div>
-      <div class="elemento-grid columna"></div>
-      <div class="elemento-grid columna"></div>
-      <div class="elemento-grid"></div>
+      <div class="elemento-grid fila columna" id="casilla1" onclick="marcar();"><p></p></div>
+      <div class="elemento-grid fila columna"><p></p></div>
+      <div class="elemento-grid fila"><p></p></div>
+      <div class="elemento-grid fila columna"><p></p></div>
+      <div class="elemento-grid fila columna"><p></p></div>
+      <div class="elemento-grid fila"><p></p></div>
+      <div class="elemento-grid columna"><p></p></div>
+      <div class="elemento-grid columna"><p></p></div>
+      <div class="elemento-grid"><p></p></div>
     </div>
+    <div>
+      <p>Turno del jugador <span id="turnoJugador">1</span></p>
+    </div>
+    <button id="modoJugar">Vs CPU</button>
     <!--<div class="contenedor-grid">
       <div class="elemento-grid"></div>
       <div class="elemento-grid"></div>

@@ -14,14 +14,19 @@
 
 .contenedor-grid {
   display: grid;
-  grid-template-columns: 150px 150px 150px;
-  /*grid-template-rows: 80px 80px 80px;*/
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
 }
 
 .elemento-grid {
   margin-left: 500px;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
+}
+
+.elemento-grid:hover {
+  transform: scale(1.05);
+  border: solid black 1px;
 }
 
 .columna {
@@ -30,4 +35,12 @@
 
 .fila {
   border-bottom: solid black 4px;
+}
+
+.casillaMorada {
+  background-color:#073B4C;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+
 }
