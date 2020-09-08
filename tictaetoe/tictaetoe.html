@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="./tictaetoe.css">
     <script src="./tictaetoe.js"></script>
   </head>
-  <body>
+  <body background ="">
     <marquee < behavior="alternate" width="450" class="title">Tic Tae toe</marquee>
     <button class="button">REINICIAR</button>
     <div class="contenedor-grid">
-      <div class="elemento-grid fila columna" id="casilla1" onclick="marcar();"><p></p></div>
-      <div class="elemento-grid fila columna"><p></p></div>
-      <div class="elemento-grid fila"><p></p></div>
-      <div class="elemento-grid fila columna"><p></p></div>
-      <div class="elemento-grid fila columna"><p></p></div>
-      <div class="elemento-grid fila"><p></p></div>
-      <div class="elemento-grid columna"><p></p></div>
-      <div class="elemento-grid columna"><p></p></div>
-      <div class="elemento-grid"><p></p></div>
+      <div id="casilla1" class="elemento-grid fila columna" onclick="colorear(1);"><p></p></div>
+      <div id="casilla2" class="elemento-grid fila columna" onclick="colorear(2);"><p></p></div>
+      <div id="casilla3" class="elemento-grid fila" onclick="colorear(3);"><p></p></div>
+      <div id="casilla4" class="elemento-grid fila columna" onclick="colorear(4);"><p></p></div>
+      <div id="casilla5" class="elemento-grid fila columna" onclick="colorear(5);"><p></p></div>
+      <div id="casilla6" class="elemento-grid fila" onclick="colorear(6);"><p></p></div>
+      <div id="casilla7" class="elemento-grid columna" onclick="colorear(7);"><p></p></div>
+      <div id="casilla8"class="elemento-grid columna" onclick="colorear(8);"><p></p></div>
+      <div id="casilla9" class="elemento-grid" onclick="colorear(9);"><p></p></div>
     </div>
     <div>
       <p>Turno del jugador <span id="turnoJugador">1</span></p>

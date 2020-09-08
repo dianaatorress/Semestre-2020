@@ -37,10 +37,16 @@
   border-bottom: solid black 4px;
 }
 
-.casillaMorada {
+.casillaJade {
   background-color:#073B4C;
   color: white;
   text-align: center;
   font-size: 30px;
+}
 
+.casillaDorada {
+  background-color: #5F4C0B;
+  color: white;
+  text-align: center;
+  font-size: 30px;
 }
