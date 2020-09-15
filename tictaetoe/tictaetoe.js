@@ -1,5 +1,6 @@
 console.log("Adhara Elven")
 let JugadorUnoTurno = true
+let copiaTablero = []
 
 function colorear(numero) {
   let casilla = document.getElementById("casilla" + numero);
@@ -12,16 +13,18 @@ function colorear(numero) {
       casilla.classList.add("casillaJade");
       casilla.classList.remove("casillaDorada");
       casilla.childNodes[0].innerText = "X";
+      copiaTablero[numero-1] = "X";
     JugadorUnoTurno = false
-  }
+    }
     else{
         casilla.classList.add("casillaDorada")
         casilla.classList.remove("casillaJade");
         casilla.childNodes[0].innerText = "0";
+        copiaTablero[numero-1] = "0";
         JugadorUnoTurno = true
     }
   }
-
+  console.log(copiaTablero);
   }
 
 
@@ -48,6 +51,7 @@ function volvi() {
   limcas(7);
   limcas(8);
   limcas(9);
+  copiaTablero = [];
 }
 
 function limcas(numero) {
