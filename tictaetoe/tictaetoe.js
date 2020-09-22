@@ -1,30 +1,36 @@
 console.log("Adhara Elven")
-let JugadorUnoTurno = true
-let copiaTablero = []
+let JugadorUnoTurno = true;
+let copiaTablero = [];
+let juegoContinua = true;
 
 function colorear(numero) {
   let casilla = document.getElementById("casilla" + numero);
   let conTexto = ocupada(casilla)
 
-  if(!conTexto){
-    if(JugadorUnoTurno){
-      casilla.classList.add("casillaJade");
-      casilla.classList.remove("casillaDorada");
-      casilla.childNodes[0].innerText = "X";
-      copiaTablero[numero-1] = "X";
-    JugadorUnoTurno = false
-    }
-    else{
-        casilla.classList.add("casillaDorada")
-        casilla.classList.remove("casillaJade");
-        casilla.childNodes[0].innerText = "0";
-        copiaTablero[numero-1] = "0";
-        JugadorUnoTurno = true
+  if(juegoContinua) {
+    if(!conTexto){
+      if(JugadorUnoTurno){
+        casilla.classList.add("casillaJade");
+        casilla.classList.remove("casillaDorada");
+        casilla.childNodes[0].innerText = "X";
+        copiaTablero[numero-1] = "X";
+      JugadorUnoTurno = false
       }
-      if(revisaGanar()) {
-        console.log("YA HAY UN GANADOR!!!");
+      else{
+          casilla.classList.add("casillaDorada")
+          casilla.classList.remove("casillaJade");
+          casilla.childNodes[0].innerText = "0";
+          copiaTablero[numero-1] = "0";
+          JugadorUnoTurno = true
+        }
+        if(revisaGanar()) {
+          console.log("YA HAY UN GANADOR!!!");
+          juegoContinua = false;
+          document.getElementById("felicidades").style.display = "inline-block";
+        }
       }
-    }
+  }
+
     //console.log(copiaTablero);
   }
 
@@ -81,6 +87,8 @@ function volvi() {
   limcas(8);
   limcas(9);
   copiaTablero = [];
+  juegoContinua = true
+  document.getElementById("felicidades").style.display = "none";
 }
 
 function limcas(numero) {
