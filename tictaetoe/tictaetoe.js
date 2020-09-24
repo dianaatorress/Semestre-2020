@@ -2,6 +2,7 @@ console.log("Adhara Elven")
 let JugadorUnoTurno = true;
 let copiaTablero = [];
 let juegoContinua = true;
+let numJugadores = 2;
 
 function colorear(numero) {
   let casilla = document.getElementById("casilla" + numero);
@@ -14,19 +15,22 @@ function colorear(numero) {
         casilla.classList.remove("casillaDorada");
         casilla.childNodes[0].innerText = "X";
         copiaTablero[numero-1] = "X";
-      JugadorUnoTurno = false
+      JugadorUnoTurno = false;
+      document.getElementById("turnoJugador").innerText = 2;
       }
       else{
           casilla.classList.add("casillaDorada")
           casilla.classList.remove("casillaJade");
           casilla.childNodes[0].innerText = "0";
           copiaTablero[numero-1] = "0";
-          JugadorUnoTurno = true
+          JugadorUnoTurno = true;
+          document.getElementById("turnoJugador").innerText = 1;
         }
         if(revisaGanar()) {
           console.log("YA HAY UN GANADOR!!!");
           juegoContinua = false;
           document.getElementById("felicidades").style.display = "inline-block";
+          //document.getElementById("turnoJugador").innerText = 1;
         }
       }
   }
@@ -87,8 +91,10 @@ function volvi() {
   limcas(8);
   limcas(9);
   copiaTablero = [];
-  juegoContinua = true
+  juegoContinua = true;
+  JugadorUnoTurno = true;
   document.getElementById("felicidades").style.display = "none";
+  document.getElementById("turnoJugador").innerText = 1;
 }
 
 function limcas(numero) {
@@ -96,4 +102,16 @@ function limcas(numero) {
   casilla.childNodes[0].innerText = "";
   casilla.classList.remove("casillaJade");
   casilla.classList.remove("casillaDorada");
+}
+
+function modoJuego() {
+  //let jugadoor = document.getElementById("modoJugar");
+  if (numJugadores === 2) {
+    document.getElementById("modoJugar").innerText = "vs PLAYER";
+    numJugadores = 1;
+  } else {
+    document.getElementById("modoJugar").innerText = "Vs CPU";
+    numJugadores = 2;
+  }
+  volvi();
 }
