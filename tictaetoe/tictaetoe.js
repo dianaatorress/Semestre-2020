@@ -31,11 +31,23 @@ function colorear(numero) {
           juegoContinua = false;
           document.getElementById("felicidades").style.display = "inline-block";
           //document.getElementById("turnoJugador").innerText = 1;
+        } else {
+          if (turnoJugador === 1) {
+            turnoCPU()
+          }
         }
       }
   }
 
     //console.log(copiaTablero);
+  }
+
+  function turnoCPU(){
+    let numAleatorio = Math.floor(Math.random() * 10)
+    let cassilla = document.getElementById("casilla" + numAleatorio)
+    if (!turnoJugador) {
+      ocupada(cassilla)
+    }
   }
 
 
@@ -95,6 +107,7 @@ function volvi() {
   JugadorUnoTurno = true;
   document.getElementById("felicidades").style.display = "none";
   document.getElementById("turnoJugador").innerText = 1;
+  //document.getElementById("modoJugar").innerText = "Vs CPU";
 }
 
 function limcas(numero) {
