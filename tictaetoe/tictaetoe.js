@@ -32,8 +32,11 @@ function colorear(numero) {
           document.getElementById("felicidades").style.display = "inline-block";
           //document.getElementById("turnoJugador").innerText = 1;
         } else {
-          if (turnoJugador === 1) {
-            turnoCPU()
+          if (numJugadores === 1) {
+            console.log("un jugador");
+            if (!JugadorUnoTurno) {
+                turnoCPU()
+            }
           }
         }
       }
@@ -43,11 +46,13 @@ function colorear(numero) {
   }
 
   function turnoCPU(){
-    let numAleatorio = Math.floor(Math.random() * 10)
-    let cassilla = document.getElementById("casilla" + numAleatorio)
-    if (!turnoJugador) {
-      ocupada(cassilla)
-    }
+    let numAleatorio = Math.floor(Math.random() * 9) + 1;
+    console.log(numAleatorio);
+    JugadorUnoTurno = false;
+    colorear(numAleatorio);
+    JugadorUnoTurno = true;
+    //let cassilla = document.getElementById("casilla" + numAleatorio)
+
   }
 
 
@@ -122,6 +127,7 @@ function modoJuego() {
   if (numJugadores === 2) {
     document.getElementById("modoJugar").innerText = "vs PLAYER";
     numJugadores = 1;
+    JugadorUnoTurno = true;
   } else {
     document.getElementById("modoJugar").innerText = "Vs CPU";
     numJugadores = 2;
