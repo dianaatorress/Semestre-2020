@@ -32,6 +32,7 @@ function colorear(numero) {
           document.getElementById("felicidades").style.display = "inline-block";
           //document.getElementById("turnoJugador").innerText = 1;
         } else {
+          revisarEmpate()
           if (numJugadores === 1) {
             console.log("un jugador");
             if (!JugadorUnoTurno) {
@@ -45,12 +46,38 @@ function colorear(numero) {
     //console.log(copiaTablero);
   }
 
+  function revisarEmpate(){
+    if (
+      copiaTablero[0] &&
+        copiaTablero[1] &&
+        copiaTablero[2] &&
+        copiaTablero[3] &&
+        copiaTablero[4] &&
+        copiaTablero[5] &&
+        copiaTablero[6] &&
+        copiaTablero[7] &&
+        copiaTablero[8]
+      ) {
+      juegoContinua = false;
+    }
+  }
+
   function turnoCPU(){
     let numAleatorio = Math.floor(Math.random() * 9) + 1;
-    console.log(numAleatorio);
-    JugadorUnoTurno = false;
-    colorear(numAleatorio);
-    JugadorUnoTurno = true;
+    let casillaSeleccionada = document.getElementById("casilla" + numAleatorio);
+
+    while (ocupada(casillaSeleccionada)) {
+      numAleatorio = Math.floor(Math.random() * 9) + 1;
+      casillaSeleccionada = document.getElementById("casilla" + numAleatorio)
+    }
+    colorear(numAleatorio)
+
+    //if (!ocupada(casillaSeleccionada)) {
+      //colorear(numAleatorio);
+    //} else {
+      //turnoCPU()
+    //}
+
     //let cassilla = document.getElementById("casilla" + numAleatorio)
 
   }
@@ -112,6 +139,8 @@ function volvi() {
   JugadorUnoTurno = true;
   document.getElementById("felicidades").style.display = "none";
   document.getElementById("turnoJugador").innerText = 1;
+  //numJugadores = 2;
+
   //document.getElementById("modoJugar").innerText = "Vs CPU";
 }
 
