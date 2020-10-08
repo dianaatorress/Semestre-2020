@@ -48,7 +48,7 @@ function colorear(numero) {
 
   function revisarEmpate(){
     if (
-      copiaTablero[0] &&
+        copiaTablero[0] &&
         copiaTablero[1] &&
         copiaTablero[2] &&
         copiaTablero[3] &&
@@ -65,12 +65,15 @@ function colorear(numero) {
   function turnoCPU(){
     let numAleatorio = Math.floor(Math.random() * 9) + 1;
     let casillaSeleccionada = document.getElementById("casilla" + numAleatorio);
-
-    while (ocupada(casillaSeleccionada)) {
-      numAleatorio = Math.floor(Math.random() * 9) + 1;
-      casillaSeleccionada = document.getElementById("casilla" + numAleatorio)
+    if (juegoContinua) {
+      while (ocupada(casillaSeleccionada)) {
+        numAleatorio = Math.floor(Math.random() * 9) + 1;
+        casillaSeleccionada = document.getElementById("casilla" + numAleatorio)
+      }
+      colorear(numAleatorio)
     }
-    colorear(numAleatorio)
+
+
 
     //if (!ocupada(casillaSeleccionada)) {
       //colorear(numAleatorio);

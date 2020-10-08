@@ -45,6 +45,8 @@
 }
 
 .casillaDorada {
+  /*ckground-image: url("https://i0.pngocean.com/files/790/922/388/viking-age-shield-shield.jpg");
+  background-position: center;*/
   background-color: #5F4C0B;
   color: white;
   text-align: center;
@@ -53,4 +55,10 @@
 
 #felicidades{
   display: none;
+}
+
+.cuerpo {
+  background-image: url("https://i.pinimg.com/736x/6a/62/e0/6a62e080f337151883254f238173320b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
