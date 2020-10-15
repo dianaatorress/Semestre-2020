@@ -1,0 +1,40 @@
+body {
+  background-image: url("https://imagenesgratis.com.es/wp-content/uploads/2015/08/Free-Beach-Wallpaper-for-Iphone-2-For-Desktop-Background.jpg");
+  width: 1600px;
+  height: 1000px;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+
+.H1 {
+  /*text-align: center;*/
+  font-size: 50px;
+  font-style: oblique;
+  font-family: serif;
+  color: #61380B;
+  margin-left: 250px;
+}
+
+.piedra {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSR74507BlcBEenPmXlTO5flH87wqgqsAj1zw&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  width: 240px;
+  height: 200px;
+}
+
+.papel {
+  background-image: url("https://w7.pngwing.com/pngs/589/908/png-transparent-pumice-volcanic-rock-igneous-rock-the-rock-wikimedia-commons-rock-sports.png");
+  background-size: cover;
+  background-position: center;
+  width: 240px;
+  height: 200px;
+}
+
+.tijera {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv_S7eWZnY7nhA-awZw4sa4lKwcgTd3ViN6w&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  width: 240px;
+  height: 200px;
+}
