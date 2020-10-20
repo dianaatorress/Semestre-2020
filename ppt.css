@@ -1,9 +1,21 @@
 body {
-  background-image: url("https://imagenesgratis.com.es/wp-content/uploads/2015/08/Free-Beach-Wallpaper-for-Iphone-2-For-Desktop-Background.jpg");
+  background-image: url("https://i.pinimg.com/564x/73/f2/35/73f235f5929a4a4dc070e8948ae9f7ae.jpg");
   width: 1600px;
   height: 1000px;
-  background-repeat: no-repeat;
-  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+nav{
+  background-image: url("https://i.pinimg.com/236x/b3/59/bf/b359bf79700baa31b9ca717d7b23f6d4.jpg"); 
+}
+
+aside {
+  background-image: url("https://i.pinimg.com/236x/ef/b2/d2/efb2d22bba4bea5defdf5e71318b9a52.jpg");
+  width: 150px;
+  height: 1180px;
+  margin-top: 0px;
+  float:left;
 }
 
 .H1 {
@@ -16,25 +28,63 @@ body {
 }
 
 .piedra {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSR74507BlcBEenPmXlTO5flH87wqgqsAj1zw&usqp=CAU");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6hbvoVKm_wjbLnE-IN06A7hBsX63UNqarnw&usqp=CAU");
   background-size: cover;
   background-position: center;
   width: 240px;
-  height: 200px;
+  height: 160px;
+  border-radius: 50px;
+  background-color: #E0E0F8!important
+}
+
+.piedra:hover {
+  background-image: url("https://assets.stickpng.com/thumbs/580b585b2edbce24c47b26f3.png");
+  background-size: cover;
+  background-position: center;
+  width: 240px;
+  height: 160px;
+  border-radius: 50px;
 }
 
 .papel {
-  background-image: url("https://w7.pngwing.com/pngs/589/908/png-transparent-pumice-volcanic-rock-igneous-rock-the-rock-wikimedia-commons-rock-sports.png");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6hbvoVKm_wjbLnE-IN06A7hBsX63UNqarnw&usqp=CAU");
   background-size: cover;
   background-position: center;
   width: 240px;
-  height: 200px;
+  height: 160px;
+  border-radius: 50px;
+  background-color: #E0E0F8!important
+}
+.papel:hover {
+  background-image: url("https://www.seekpng.com/png/small/48-485999_torn-notebook-paper-png-folha-de-papel-rasgado.png");
+  background-size: cover;
+  background-position: center;
+  width: 240px;
+  height: 160px;
+  border-radius: 50px;
 }
 
 .tijera {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv_S7eWZnY7nhA-awZw4sa4lKwcgTd3ViN6w&usqp=CAU");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6hbvoVKm_wjbLnE-IN06A7hBsX63UNqarnw&usqp=CAU");
   background-size: cover;
   background-position: center;
   width: 240px;
-  height: 200px;
+  height: 160px;
+  border-radius: 50px;
+  background-color: #E0E0F8!important
+}
+
+.tijera:hover {
+  background-image: url("https://tienda.doribell.com/WebRoot/StoreES2/Shops/eb1853/57F6/C312/7D3A/954C/CA22/52DF/D03B/A201/tijera_hcr40_new_ml.png");
+  background-size: contain;
+  background-position: center;
+  width: 240px;
+  height: 160px;
+  border-radius: 50px;
+}
+
+.usuario {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
