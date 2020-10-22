@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://i.pinimg.com/564x/73/f2/35/73f235f5929a4a4dc070e8948ae9f7ae.jpg");
+  background-image: url("https://i.pinimg.com/236x/84/f4/66/84f466e6626b31e44c2c569530b69719.jpg");
   width: 1600px;
   height: 1000px;
   /*background-repeat: no-repeat;*/
@@ -7,11 +7,12 @@ body {
 }
 
 nav{
-  background-image: url("https://i.pinimg.com/236x/b3/59/bf/b359bf79700baa31b9ca717d7b23f6d4.jpg"); 
+  background-image: url("https://i.pinimg.com/236x/b3/59/bf/b359bf79700baa31b9ca717d7b23f6d4.jpg");
+  height: 100px;
 }
 
 aside {
-  background-image: url("https://i.pinimg.com/236x/ef/b2/d2/efb2d22bba4bea5defdf5e71318b9a52.jpg");
+  background-image: url("https://i.pinimg.com/236x/c1/d0/f7/c1d0f79277d914f24d18cd0f1fe0b45a.jpg");
   width: 150px;
   height: 1180px;
   margin-top: 0px;
@@ -28,7 +29,7 @@ aside {
 }
 
 .piedra {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6hbvoVKm_wjbLnE-IN06A7hBsX63UNqarnw&usqp=CAU");
+  background-image: url("https://i.pinimg.com/236x/94/a0/52/94a052e97ecba259c9ab9db21b9d8c24.jpg");
   background-size: cover;
   background-position: center;
   width: 240px;
@@ -47,7 +48,7 @@ aside {
 }
 
 .papel {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6hbvoVKm_wjbLnE-IN06A7hBsX63UNqarnw&usqp=CAU");
+  background-image: url("https://i.pinimg.com/236x/94/a0/52/94a052e97ecba259c9ab9db21b9d8c24.jpg");
   background-size: cover;
   background-position: center;
   width: 240px;
@@ -65,7 +66,7 @@ aside {
 }
 
 .tijera {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6hbvoVKm_wjbLnE-IN06A7hBsX63UNqarnw&usqp=CAU");
+  background-image: url("https://i.pinimg.com/236x/94/a0/52/94a052e97ecba259c9ab9db21b9d8c24.jpg");
   background-size: cover;
   background-position: center;
   width: 240px;
@@ -87,4 +88,24 @@ aside {
   width: 100px;
   height: 100px;
   border-radius: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cpu {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.tijugador {
+  color: #CED8F6;
+  margin-left: 15px;
+}
+
+.ticpu {
+  color: #CED8F6;
+  margin-left: 15px;
 }
