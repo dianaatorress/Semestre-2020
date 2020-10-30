@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Piedra. Papel. Tijera</title>
     <link href="./ppt.css" rel="stylesheet">
+    <script src="./ppt.js"></script>
   </head>
   <body>
 
@@ -26,15 +27,17 @@
       <section>
         <div style="display:inline-block; margin-left:250px">
           <p>
-            <button class="piedra"> </button>
-            <button class="papel"> </button>
-            <button class="tijera"> </button>
+            <button class="piedra" onclick="jueUsuario(1)"> </button>
+            <button class="papel" onclick="jueUsuario(2)"> </button>
+            <button class="tijera" onclick="jueUsuario(3)"> </button>
           </p>
         </div>
 
       </section>
 
       <article>
+        <h1 id="mensaje"></h1>
+        <p id="eleccion"></p>
       </article>
     </main>
 
