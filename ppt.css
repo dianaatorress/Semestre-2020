@@ -109,3 +109,41 @@ aside {
   color: #CED8F6;
   margin-left: 15px;
 }
+
+.mensFeli {
+  font-size: 50px;
+  color: #0B173B;
+  text-shadow: 2px 2px #81BEF7;
+  margin-left: 555px;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.eleccionCpu {
+  display: none;
+  color: #0B173B;
+  text-shadow: 1px 1px #81BEF7;
+  margin-left: 555px;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.eleccionn {
+  font-size: 30px;
+  color: #0B173B;
+  text-shadow: 2px 2px #81BEF7;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.num {
+  font-size: 40px;
+  color: #0B173B;
+  text-shadow: 2px 2px #81BEF7;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+}
