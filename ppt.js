@@ -28,3 +28,8 @@ let puntoCPU = 0;
       document.getElementById("pcpu").innerText = puntoCPU += 1;
     }
   }
+
+function reiboot(){
+  document.getElementById("pjugador").innerText = 0;
+  document.getElementById("pcpu").innerText = 0;
+}

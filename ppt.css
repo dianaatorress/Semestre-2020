@@ -147,3 +147,14 @@ aside {
   font-style: oblique;
   font-weight: bold;
 }
+
+.reniboot {
+  margin-left: 25px;
+  margin-top: 15px;
+  border-radius: 25px;
+  color: #0B173B;
+  text-decoration: overline;
+  text-decoration: underline;
+  text-shadow: 2px 2px #81BEF7;
+  font-weight: bolder;
+}
