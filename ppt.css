@@ -121,7 +121,6 @@ aside {
 }
 
 .eleccionCpu {
-  display: none;
   color: #0B173B;
   text-shadow: 1px 1px #81BEF7;
   margin-left: 555px;
@@ -130,6 +129,9 @@ aside {
   font-weight: bold;
 }
 
+#eleccion{
+  display: none;
+}
 .eleccionn {
   font-size: 30px;
   color: #0B173B;
@@ -148,7 +150,7 @@ aside {
   font-weight: bold;
 }
 
-.reniboot {
+.reiniboot {
   margin-left: 25px;
   margin-top: 15px;
   border-radius: 25px;
@@ -157,4 +159,8 @@ aside {
   text-decoration: underline;
   text-shadow: 2px 2px #81BEF7;
   font-weight: bolder;
+}
+
+.reiniboot:hover {
+  cursor: pointer;
 }

@@ -13,6 +13,7 @@ let puntoCPU = 0;
     let eleAleatorio = Math.floor(Math.random() * 3) + 1;
     console.log(eleAleatorio);
     document.getElementById("eleccion").style.display = "block";
+    document.getElementById("mensaje").style.display = "block";
     document.getElementById("eleccioon").innerText = eleAleatorio;
     if (opUsuario == eleAleatorio) {
       document.getElementById("mensaje").innerText="EMPATE!!!"
@@ -32,4 +33,8 @@ let puntoCPU = 0;
 function reiboot(){
   document.getElementById("pjugador").innerText = 0;
   document.getElementById("pcpu").innerText = 0;
+  document.getElementById("mensaje").style.display = "none";
+  document.getElementById("eleccion").style.display = "none";
+  puntoCPU = 0;
+  puntosUsuario = 0;
 }
